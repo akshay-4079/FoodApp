@@ -1,0 +1,15 @@
+
+<div class=”container” style="background-color: black;min-height: 100vh;align-content: center;margin-top:60px "  >
+  <div class=”template”>
+    <h2 style='color:whitesmoke'>Restaurants Available</h2>
+    <div *ngFor="let Restaurant of Restaurants;let i=index"  style="float:left;margin-right: 80px" >
+        <div class="card" style="width: 18rem;">
+            <img src={{Restaurant.Image}} style="width: 280px;height: 300px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{Restaurant.Name}}</h5>
+              <button class='btn btn-light' (click)="OnClick(Restaurant.Name)" routerLink='restaurants'>Try Me</button>
+            </div>
+          </div>
+        </div>  
+    </div>
+    </div>

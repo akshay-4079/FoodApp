@@ -1,0 +1,12 @@
+<div class="wrapper" style="background-color: black;min-height: 100vh;align-content: center"  >
+    <form class="form-signin" style='width:50%;margin-left:25%'>       
+      <img src='https://cdn.dribbble.com/users/1785732/screenshots/3967927/alogo.png' style="margin-left: 35%;margin-top:15%;width: 250px;height: 150px">
+      <br>
+      <br>
+      <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" [(ngModel)]="loginmodel.Username">
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""[(ngModel)]="loginmodel.Password">      
+    
+      <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit()" >Login</button>  
+       <a [ngStyle]="{'visibility':isogin===true ? 'visible':'hidden'}" routerLink={{Route}}>Go</a> 
+    </form>
+  </div>

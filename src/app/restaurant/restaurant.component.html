@@ -1,0 +1,16 @@
+
+<div class=”container” style="background-color: black;min-height: 200vh;align-content: center;margin-top:60px "  >
+    <div class=”template”>
+      <h2 style='color:whitesmoke'>Dishes Available</h2>
+      <div *ngFor="let Item of Items;let i=index"  style="float:left;margin-right: 80px;margin-bottom:80px" >
+          <div class="card" style="width: 18rem;">
+              <img src={{Item.Image}} style="width: 280px;height: 300px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{Item.Name}}</h5>
+                <p>{{Item.Price}}</p>
+              </div>
+            </div>
+          </div>  
+      </div>
+      </div>
+  
